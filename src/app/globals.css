@@ -1,0 +1,139 @@
+body {
+  font-size: 1.2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  background-color: white;
+  border-bottom: 1px solid sandybrown;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.navbar-button {
+  height: 4rem;
+  width: 7rem;
+  border: 2px solid white;
+  background-color: white;
+  cursor: pointer;
+  color: brown;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar-button:hover {
+  border-bottom: 2px solid darkred;
+}
+
+.products {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+  gap: 10px;
+}
+
+.indi-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+  height: 250px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: floralwhite;
+  padding: 3px;
+}
+
+.indi-products:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.data {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 3px;
+}
+
+.execution {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+
+.stock-button-left,
+.stock-button-right {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-color: blanchedalmond;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 50px;
+}
+
+.stock-button-left:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.stock-button-right:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+
+}
+
+input {
+  padding: 4px;
+  border-radius: 3px;
+  border: 2px solid tan;
+  background-color: blanchedalmond;
+}
+
+input:focus {
+  background-color: beige;
+}
+
+select {
+  background-color: darkkhaki;
+  padding: 4px;
+}
+
+option {
+  background-color: azure;
+}
+
+.images {
+  margin-right: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.rocket {
+  cursor: pointer;
+  margin-right: auto;
+  animation: rocket-move 60s linear infinite;
+}
+
+@keyframes rocket-move {
+  to {
+
+    transform: rotateZ(360deg)
+  }
+}
+
+.cart-img {
+  cursor: pointer;
+}
