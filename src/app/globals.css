@@ -4,13 +4,15 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: flex-end;
-  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
   background-color: white;
   border-bottom: 1px solid sandybrown;
-  margin-right: 3px;
+  width: 100%;
+  position: sticky;
   top: 0;
-  width: 99%;
+  left: 0;
+  z-index: 100;
 }
 
 
@@ -27,6 +29,20 @@ body {
 
 .navbar-button:hover {
   border-bottom: 2px solid darkred;
+}
+
+@media(max-width:400px) {
+  .rocket {
+    display: none;
+  }
+
+  .navbar {
+    margin-right: 1rem;
+  }
+
+  .navbar-button {
+    size: 1rem;
+  }
 }
 
 .products {
