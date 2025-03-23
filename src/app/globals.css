@@ -4,15 +4,13 @@ body {
 
 .navbar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: white;
   border-bottom: 1px solid sandybrown;
   width: 100%;
   position: sticky;
   top: 0;
-  left: 0;
-  z-index: 100;
+  gap: 1rem;
 }
 
 
@@ -31,19 +29,7 @@ body {
   border-bottom: 2px solid darkred;
 }
 
-@media(max-width:400px) {
-  .rocket {
-    display: none;
-  }
-
-  .navbar {
-    margin-right: 1rem;
-  }
-
-  .navbar-button {
-    size: 1rem;
-  }
-}
+@media(max-width:360px) {}
 
 .products {
   display: grid;
