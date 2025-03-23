@@ -1,10 +1,13 @@
+"use client";
+import { useRouter } from "next/navigation";
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="container">
       <header className="hero">
         <h1>Welcome to My Store</h1>
         <p>Your one-stop shop for everything you need.</p>
-        <button className="shop-now">Shop Now</button>
+        <button className="shop-now" onClick={() => router.push('/reality')}>Shop Now</button>
       </header>
 
       <section className="shop-section">
@@ -32,8 +35,8 @@ export default function Home() {
 
       <section className="customer-reviews">
         <h2>What Our Customers Say</h2>
-        <div className="review">⭐⭐⭐⭐⭐ "Best shopping experience ever!"</div>
-        <div className="review">⭐⭐⭐⭐⭐ "Great quality and fast delivery!"</div>
+        <div className="review">⭐⭐⭐⭐⭐ Best shopping experience ever!</div>
+        <div className="review">⭐⭐⭐⭐⭐ Great quality and fast delivery!</div>
       </section>
 
       <footer className="footer">
