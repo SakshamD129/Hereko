@@ -154,3 +154,98 @@ option {
 .cart-img {
   cursor: pointer;
 }
+
+.welcome {
+  margin-top: 0;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: coral;
+  font-size: larger;
+  height: 160px;
+  animation: colorchanger ease-in 8s infinite;
+  background-color: black;
+  border-radius: 30px;
+  font: bolder;
+}
+
+@keyframes colorchanger {
+  20% {
+    color: lawngreen;
+  }
+
+  40% {
+    color: tomato;
+  }
+
+  60% {
+    color: aquamarine;
+  }
+
+  80% {
+    color: limegreen;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+.Shop {
+  position: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 300px;
+  background-image: url('../../public/DLAN.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  font: bolder;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: larger;
+}
+
+.why {
+  position: relative;
+  bottom: 50px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.indi-why {
+  display: grid;
+  place-items: center;
+  border: 1px solid goldenrod;
+  height: 150px;
+  width: 150px;
+  background-color: darkorange;
+  border-radius: 18px;
+  scale: 1;
+  animation: moving linear 5s forwards;
+  opacity: 0.8;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+@keyframes moving {
+  to {
+    scale: 1.1;
+    opacity: 1;
+    background-color: brown;
+    color: whitesmoke;
+  }
+}
+
+.everything {
+  border: 1px solid black;
+  height: 200px;
+  display: grid;
+  place-content: center;
+  font-weight: 900;
+  background-color: black;
+  color: aliceblue;
+}

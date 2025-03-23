@@ -1,9 +1,21 @@
-
 export default function Home() {
   return (
-    <div >
-      Hello Main page.
-      This is a dummy website made by Saksham Dahal
-    </div>
+    <>
+      <div className="welcome">
+        <h1>W</h1>
+        elcome to My Store
+      </div>
+
+      <div className="Shop">
+        Shop all you want
+      </div>
+      <div className="why">
+        <div className="indi-why">See it</div>
+        <div className="indi-why">Click it</div>
+        <div className="indi-why">Shop it</div>
+      </div>
+      <div className="everything">We have everythig that you have got</div>
+
+    </>
   );
 }
