@@ -262,9 +262,43 @@ option {
   border-radius: 10px;
 }
 
+.shop-now {
+  background: white;
+  color: #ff6f61;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.shop-now:hover {
+  background: #ffcc00;
+  color: black;
+}
+
 .shop-section {
   margin: 20px 0;
   font-size: 1.2em;
+}
+
+.featured-products {
+  margin: 30px 0;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.product {
+  background: #f4f4f4;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .why-choose-us {
@@ -282,6 +316,18 @@ option {
 .why-item {
   background: #ffcc00;
   padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.customer-reviews {
+  margin: 30px 0;
+  font-style: italic;
+}
+
+.review {
+  background: #e0e0e0;
+  padding: 10px;
+  margin: 10px 0;
   border-radius: 5px;
 }
 
