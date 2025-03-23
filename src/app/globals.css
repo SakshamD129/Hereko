@@ -53,7 +53,6 @@ body {
   padding: 20px;
 }
 
-/* Individual Product Card */
 .indi-products {
   display: flex;
   flex-direction: column;
@@ -73,7 +72,6 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Product Name and Category */
 .indi-products div {
   margin-bottom: 8px;
 }
@@ -104,7 +102,6 @@ body {
   color: #16a085;
 }
 
-/* Execution Buttons (Increase/Decrease) */
 .execution {
   display: flex;
   align-items: center;
@@ -134,7 +131,6 @@ body {
   background-color: #2ecc71;
 }
 
-/* Quantity Display */
 .data {
   display: flex;
   align-items: center;
@@ -149,7 +145,6 @@ body {
   border: 2px solid #bdc3c7;
 }
 
-/* Search and Filter Input */
 input {
   padding: 8px;
   border-radius: 5px;
@@ -186,13 +181,6 @@ option {
   background-color: #fff;
 }
 
-/* Loading State */
-.waiting {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #3498db;
-  margin-top: 20px;
-}
 
 /*
 .products {
