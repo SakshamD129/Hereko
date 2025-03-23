@@ -1,10 +1,10 @@
 "use client";
-import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import useCart from '../cart/page';
 import forCart, { forFilter } from '../apis/api';
 function Complete({ item }) {
-
+    const router = useRouter();
     const { count, increase, decrease, put, cutdown } = useCart();
     const [data, setData] = useState(localStorage.getItem(item.productId) || 0);
     function Increase(item) {
@@ -29,7 +29,7 @@ function Complete({ item }) {
 
     return (
 
-        < div key={item.productId} className='indi-products'>
+        < div key={item.productId} className='indi-products' onClick={() => router.push(`/delete?id=${item.productId}`)}>
             <div>{item.name}</div>
             <div>{item.category}</div>
             <div>${item.price}</div>
