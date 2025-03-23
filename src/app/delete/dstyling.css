@@ -1,0 +1,10 @@
+.individual-product {
+    display: flex;
+    border: 1px solid black;
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    max-height: 5rem;
+    border-radius: 20px;
+    background-color: azure;
+}
