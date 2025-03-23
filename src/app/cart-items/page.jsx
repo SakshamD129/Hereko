@@ -2,12 +2,18 @@
 import React from "react";
 import useCart from "../cart/cart-data";
 import './yesko.css'
-
+function Waiting() {
+    return (
+        <>
+            <div className="no-cart"></div>
+        </>
+    )
+}
 function Page() {
     const { herek } = useCart();
 
     if (herek.size === 0) {
-        return <div className="no-cart">Waiting</div>;
+        return <Waiting />;
     }
 
     return (

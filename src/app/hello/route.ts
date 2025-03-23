@@ -21,9 +21,9 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const newProduct: Product = {
         id: products.length + 1,
-        name: body.name || "Unnamed Product", // Fallback if name is not provided
-        price: body.price || 0, // Default price
-        category: body.category || "Uncategorized", // Default category
+        name: body.name || "Unnamed Product",
+        price: body.price || 0,
+        category: body.category || "Uncategorized",
     };
 
     products.push(newProduct);

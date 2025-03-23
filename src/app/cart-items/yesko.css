@@ -2,19 +2,10 @@
     margin: 30px;
     display: grid;
     place-content: center;
-    animation: rotating 2s linear infinite;
-}
-
-@keyframes rotating {
-    0% {
-        transform: rotateY(0deg);
-        color: red;
-    }
-
-    100% {
-        transform: rotateY(360deg);
-        color: blue;
-    }
+    background-image: url('../../../public/astro.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 600px;
 }
 
 .cart-items-true {
