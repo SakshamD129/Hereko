@@ -29,7 +29,21 @@ body {
   border-bottom: 2px solid darkred;
 }
 
-@media(max-width:360px) {}
+@media(max-width:360px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    gap: 2px;
+    justify-content: center;
+  }
+
+  .navbar-button {
+    width: 5rem;
+    font-size: 1rem;
+  }
+}
 
 .products {
   display: grid;
