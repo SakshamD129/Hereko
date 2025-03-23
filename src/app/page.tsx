@@ -1,21 +1,28 @@
 export default function Home() {
   return (
-    <>
-      <div className="welcome">
-        <h1>W</h1>
-        elcome to My Store
-      </div>
+    <div className="container">
+      <header className="hero">
+        <h1>Welcome to My Store</h1>
+        <p>Your one-stop shop for everything you need.</p>
+      </header>
 
-      <div className="Shop">
-        Shop all you want
-      </div>
-      <div className="why">
-        <div className="indi-why">See it</div>
-        <div className="indi-why">Click it</div>
-        <div className="indi-why">Shop it</div>
-      </div>
-      <div className="everything">We have everythig that you have got</div>
+      <section className="shop-section">
+        <h2>Shop All You Want</h2>
+        <p>Discover the best deals and latest trends.</p>
+      </section>
 
-    </>
+      <section className="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <div className="why-list">
+          <div className="why-item">See it</div>
+          <div className="why-item">Click it</div>
+          <div className="why-item">Shop it</div>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <p>We have everything that you need!</p>
+      </footer>
+    </div>
   );
 }

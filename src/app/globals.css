@@ -155,7 +155,7 @@ option {
   cursor: pointer;
 }
 
-.welcome {
+/*.welcome {
   margin-top: 0;
   padding: 0px;
   display: flex;
@@ -248,4 +248,47 @@ option {
   font-weight: 900;
   background-color: black;
   color: aliceblue;
+}*/
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.hero {
+  background: #ff6f61;
+  color: white;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.shop-section {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.why-choose-us {
+  margin: 30px 0;
+}
+
+.why-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.why-item {
+  background: #ffcc00;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 20px;
+  background: #333;
+  color: white;
+  border-radius: 5px;
 }
