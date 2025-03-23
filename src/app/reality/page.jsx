@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
-import useCart from '../cart/page';
+import useCart from '../cart/cart-data';
 import forCart, { forFilter } from '../apis/api';
 function Complete({ item }) {
     const router = useRouter();
@@ -29,8 +29,8 @@ function Complete({ item }) {
 
     return (
 
-        < div key={item.productId} className='indi-products' onClick={() => router.push(`/delete?id=${item.productId}`)}>
-            <div>{item.name}</div>
+        < div key={item.productId} className='indi-products' >
+            <div onClick={() => router.push(`/delete?id=${item.productId}`)}>{item.name}</div>
             <div>{item.category}</div>
             <div>${item.price}</div>
             <div>{item.stock}</div>

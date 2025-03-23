@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import useCart from "../cart/page";
+import useCart from "../cart/cart-data";
 import './yesko.css'
 
 function Page() {

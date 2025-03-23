@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import useCart from '../cart/page';
+import useCart from '../cart/cart-data';
 function Default() {
     const { count } = useCart();
     const router = useRouter();
