@@ -1,14 +1,31 @@
 import { create } from "zustand";
-const useCart = create((set) => ({
+
+type CartItem = string;
+
+interface CartState {
+    count: number;
+    herek: Map<CartItem, number>;
+    cartItems: CartItem[];
+    increase: () => void;
+    decrease: () => void;
+    put: (data: CartItem) => void;
+    cutdown: (data: CartItem) => void;
+}
+
+const useCart = create<CartState>((set) => ({
     count: 0,
     herek: new Map(),
     cartItems: [],
-    increase: () => set((state) => ({
-        count: state.count + 1
-    })),
-    decrease: () => set((state) => ({
-        count: state.count > 0 ? state.count - 1 : 0,
-    })),
+
+    increase: () =>
+        set((state) => ({
+            count: state.count + 1,
+        })),
+
+    decrease: () =>
+        set((state) => ({
+            count: state.count > 0 ? state.count - 1 : 0,
+        })),
 
     put: (data) =>
         set((state) => {
@@ -16,7 +33,7 @@ const useCart = create((set) => ({
             const newHerek = new Map(state.herek);
 
             if (newHerek.has(data)) {
-                newHerek.set(data, newHerek.get(data) + 1);
+                newHerek.set(data, (newHerek.get(data) ?? 0) + 1);
             } else {
                 newHerek.set(data, 1);
             }
@@ -29,11 +46,11 @@ const useCart = create((set) => ({
     cutdown: (data) =>
         set((state) => {
             const newHerek = new Map(state.herek);
-            let newCartItems = [...state.cartItems];
+            const newCartItems = [...state.cartItems];
 
             if (newHerek.has(data)) {
-                if (newHerek.get(data) > 1) {
-                    newHerek.set(data, newHerek.get(data) - 1);
+                if ((newHerek.get(data) ?? 0) > 1) {
+                    newHerek.set(data, (newHerek.get(data) ?? 0) - 1);
                 } else {
                     newHerek.delete(data);
                     const index = newCartItems.indexOf(data);
@@ -47,8 +64,6 @@ const useCart = create((set) => ({
                 cartItems: newCartItems,
             };
         }),
-
-})
-);
+}));
 
 export default useCart;
