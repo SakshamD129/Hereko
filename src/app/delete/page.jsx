@@ -1,7 +1,7 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-
+import './dstyling.css';
 const DeletePage = () => {
     const searchParams = useSearchParams();
     const id = searchParams.get("id");
@@ -19,13 +19,13 @@ const DeletePage = () => {
             fetchProduct();
         }
     }, [id]);
-
+    if (!product) <div>Waiting</div>
 
     return (
-        <div className="delete-page">
+        <div className="individual-product" >
             {product.map(item => (
                 <div key={item.productId}>
-                    <div>Name:{item.name}</div>
+                    <div> <b>Name:</b>{item.name}</div>
                     <div>Price:{item.price}</div>
                     <div><b>Stock:</b>{item.stock}</div>
                 </div>
