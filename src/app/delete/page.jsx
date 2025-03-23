@@ -1,8 +1,10 @@
 "use client";
+
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
-import './dstyling.css';
-const DeletePage = () => {
+import { Suspense, useEffect, useState } from "react";
+import "./dstyling.css";
+
+const DeletePageContent = () => {
     const searchParams = useSearchParams();
     const id = searchParams.get("id");
 
@@ -19,19 +21,26 @@ const DeletePage = () => {
             fetchProduct();
         }
     }, [id]);
-    if (!product) <div>Waiting</div>
+
+    if (!product.length) return <div>Loading...</div>;
 
     return (
-        <div className="individual-product" >
-            {product.map(item => (
+        <div className="individual-product">
+            {product.map((item) => (
                 <div key={item.productId}>
-                    <div> <b>Name:</b>{item.name}</div>
-                    <div>Price:{item.price}</div>
-                    <div><b>Stock:</b>{item.stock}</div>
+                    <div><b>Name:</b> {item.name}</div>
+                    <div><b>Price:</b> {item.price}</div>
+                    <div><b>Stock:</b> {item.stock}</div>
                 </div>
             ))}
         </div>
     );
 };
+
+const DeletePage = () => (
+    <Suspense fallback={<div>Loading search params...</div>}>
+        <DeletePageContent />
+    </Suspense>
+);
 
 export default DeletePage;
