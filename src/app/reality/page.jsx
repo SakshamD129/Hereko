@@ -70,11 +70,7 @@ function Page() {
                     <option value="hora">Initial</option>
                 </select>
             </div>
-            <br />
-            <br />
-            {api.length === 0 ? <div>Waiting....</div> : ""}
             < div className='products' >
-
                 {
                     api.map(item => (
                         <Complete item={item} key={item.productId} />

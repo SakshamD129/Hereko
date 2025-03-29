@@ -35,7 +35,8 @@
     ".next/types/**/*.ts",
     "public/bhai/page.jsx",
     "src/app/delete/page.jsx",
-    "src/app/cart/cart-data.js"
+    "src/app/cart/cart-data.js",
+    "src/app/dbtest/route.ts"
   ],
   "exclude": [
     "node_modules"

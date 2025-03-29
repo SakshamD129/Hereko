@@ -8,7 +8,8 @@ export function middleware(request: NextRequest) {
         response.cookies.set("theme", "dark");
     }
     return response;||*/
-    if (request.nextUrl.pathname === "/biralo") {
+    const check = request.nextUrl.pathname;
+    if (check === "/biralo") {
         console.log(request.nextUrl);
         return NextResponse.redirect(new URL("/just", request.nextUrl));
 
