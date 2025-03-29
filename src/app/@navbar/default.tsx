@@ -8,6 +8,7 @@ function Default() {
     return (
         <div className='navbar'>
             <Image className='rocket' src="/astro.png" alt='photo' width={40} height={40} onClick={() => router.push("/")} priority></Image>
+            <button className="navbar-button" onClick={() => router.push("/mvr")}>Data</button>
             <button className="navbar-button" onClick={() => router.push('/just')}>About</button>
             <button className="navbar-button" onClick={() => router.push("/reality")}>List</button>
             <div className="cart-img" onClick={() => router.push("/cart-items")}><label>{count}</label><Image src="./cartbelow.svg" alt='Cart:' width={20} height={50}></Image></div>
