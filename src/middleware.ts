@@ -10,7 +10,6 @@ export function middleware(request: NextRequest) {
     return response;||*/
     const check = request.nextUrl.pathname;
     if (check === "/biralo") {
-        console.log(request.nextUrl);
         return NextResponse.redirect(new URL("/just", request.nextUrl));
 
     }
