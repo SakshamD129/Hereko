@@ -29,19 +29,19 @@ body {
   border-bottom: 2px solid darkred;
 }
 
-@media(max-width:360px) {
+@media(max-width:500px) {
+  .navbar-button {
+    height: 3rem;
+    width: 5rem;
+    font-size: 1rem;
+  }
+
   body {
     font-size: 1rem;
   }
 
   .navbar {
-    gap: 2px;
-    justify-content: center;
-  }
-
-  .navbar-button {
-    width: 5rem;
-    font-size: 1rem;
+    gap: 20px;
   }
 }
 
