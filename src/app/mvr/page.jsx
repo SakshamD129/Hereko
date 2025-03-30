@@ -4,7 +4,14 @@ import { useEffect, useRef, useState } from "react";
 function page() {
     const [data, setData] = useState([]);
     async function Hello() {
-        const a = await fetch("/dbtest");
+        const a = await fetch("/dbtest", {
+            method: "GET",
+            headers: {
+                "Authorization": "1234",
+                "Content-Type": "application/json",
+            }
+        }
+        );
         const response = await a.json();
         setData(response);
     }
@@ -21,6 +28,7 @@ function page() {
         const a = await fetch("/dbtest", {
             method: "POST",
             headers: {
+                "Authorization": "1234",
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({ name: value, email: value }),

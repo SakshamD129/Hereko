@@ -1,6 +1,10 @@
 import clientPromise from "../../../libs/mongo";
 import { NextResponse } from "next/server";
 export async function GET(request) {
+    const read = request.headers.get("Authorization");
+    if (read != "1234") {
+        return NextResponse.redirect(new URL("/", request.nextUrl));
+    }
     const a = request.nextUrl.searchParams.get("value");
     const client = await clientPromise;
     const db = client.db('sample_mflix');
@@ -14,6 +18,9 @@ export async function GET(request) {
     return NextResponse.json(users);
 }
 export async function POST(request) {
+    if (read != "1234") {
+        return NextResponse.redirect(new URL("/", request.nextUrl));
+    }
     const response = await request.json();
     const client = await clientPromise;
     const db = client.db('sample_mflix');
