@@ -71,6 +71,7 @@ function Page() {
                 </select>
             </div>
             < div className='products' >
+                {(api.length == 0) ? <div>Waiting</div> : ""}
                 {
                     api.map(item => (
                         <Complete item={item} key={item.productId} />
