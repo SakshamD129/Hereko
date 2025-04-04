@@ -30,13 +30,16 @@ body {
 }
 
 .cart-img {
-  height: 3rem;
-  width: 3rem;
-  position: inherit;
+  position: relative;
+}
+
+.imgcart {
+  height: 1fr;
+  width: 3fr;
 }
 
 label {
-  position: relative;
+  position: inherit;
   left: 14px;
   bottom: 32px;
 }
@@ -80,6 +83,11 @@ label {
 
   .navbar {
     gap: 15px;
+  }
+
+  .cart-img {
+    height: relative;
+    width: relative;
   }
 
   .rocket {
