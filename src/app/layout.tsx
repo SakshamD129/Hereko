@@ -26,7 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <meta name="next-size-adjust" content="0" />
+      </head>
+      <body className={`${geistSans.variable}${geistMono.variable}`}>
         {navbar}
         <br />
         {children}
