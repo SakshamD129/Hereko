@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="container">
       <header className="hero">
-        <h1>Welcome to My Store</h1>
+        <h1>Welcome to The Store</h1>
         <p>Your one-stop shop for everything you need.</p>
         <button className="shop-now" onClick={() => router.push('/reality')}>Shop Now</button>
       </header>
