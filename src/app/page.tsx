@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
@@ -41,7 +42,7 @@ export default function Home() {
 
       <footer className="footer">
         <p>We have everything that you need!</p>
-        <p>&copy; 2025 My Store. All rights reserved.</p>
+        <p>&copy; <Link href="https://github.com/SakshamD129/Hereko" >GitHub</Link></p>
       </footer>
     </div>
   );
