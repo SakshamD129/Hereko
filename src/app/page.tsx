@@ -12,12 +12,12 @@ export default function Home() {
       </header>
 
       <section className="shop-section">
-        <h2>Shop All You Want</h2>
+        <div>Shop All You Want</div>
         <p>Discover the best deals and latest trends.</p>
       </section>
 
       <section className="featured-products">
-        <h2>Featured Products</h2>
+        <div>Featured Products</div>
         <div className="product-list">
           <div className="product">📱 Smart Gadgets</div>
           <div className="product">👕 Fashion & Apparel</div>
@@ -25,17 +25,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="why-choose-us">
-        <h2>Why Choose Us?</h2>
+      <p className="why-choose-us">
+        <div>Why Choose Us?</div>
         <div className="why-list">
           <div className="why-item">See it</div>
           <div className="why-item">Click it</div>
           <div className="why-item">Shop it</div>
         </div>
-      </section>
+      </p>
 
       <section className="customer-reviews">
-        <h2>What Our Customers Say</h2>
+        <div>What Our Customers Say</div>
         <div className="review">⭐⭐⭐⭐⭐ Best shopping experience ever!</div>
         <div className="review">⭐⭐⭐⭐⭐ Great quality and fast delivery!</div>
       </section>
