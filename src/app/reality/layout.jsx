@@ -1,6 +1,6 @@
 export const metadata = {
-    title: "List",
-    description: "Shop Items",
+    title: "Consumer's need list of items",
+    description: "Select the items that you want and shop. Enjoy life and shop in chill",
 };
 function layout({ children }) {
     return (
