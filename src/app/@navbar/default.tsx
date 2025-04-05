@@ -11,7 +11,7 @@ function Default() {
             <button className="navbar-button" onClick={() => router.push("/mvr")}>Data</button>
             <button className="navbar-button" onClick={() => router.push('/just')}>About</button>
             <button className="navbar-button" onClick={() => router.push("/reality")}>List</button>
-            <div className="cart-img" onClick={() => router.push("/cart-items")}><label>{count}</label><Image src="./cartbelow.svg" alt='Cart:' width={20} height={50} className='imgcart'></Image></div>
+            <div className="cart-img" onClick={() => router.push("/cart-items")}><label>{count}</label><Image src="./cartbelow.svg" alt='Cart:' width={30} height={50} className='imgcart'></Image></div>
         </div>
     )
 }
