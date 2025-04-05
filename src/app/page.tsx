@@ -12,12 +12,12 @@ export default function Home() {
       </header>
 
       <section className="shop-section">
-        <div>Shop All You Want</div>
+        <h2>Shop All You Want</h2>
         <p>Discover the best deals and latest trends.</p>
       </section>
 
       <section className="featured-products">
-        <div>Featured Products</div>
+        <h2>Featured Products</h2>
         <div className="product-list">
           <div className="product">📱 Smart Gadgets</div>
           <div className="product">👕 Fashion & Apparel</div>

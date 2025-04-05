@@ -1,6 +1,6 @@
 export const metadata = {
-    title: "Consumer's need list of items",
-    description: "Select the items that you want and shop. Enjoy life and shop in chill",
+    title: "Browse & Buy Top Products Online | Best Deals in One Place",
+    description: "Shop our full collection of high-quality products. Find the best deals on electronics, fashion, home essentials & more. Fast shipping, easy returns.",
 };
 function layout({ children }) {
     return (

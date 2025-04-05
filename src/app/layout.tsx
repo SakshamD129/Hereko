@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shopping: For All and Safe",
-  description: "We go shopping. Fun and Games",
+  title: "Shop Quality Products Online | Fast Shipping & Great Deals",
+  description: "Discover top-rated products at unbeatable prices. Enjoy fast shipping, secure checkout, and exclusive deals on electronics, fashion, home goods & more.",
 };
 
 export default function RootLayout({
