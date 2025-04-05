@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shopping",
+  title: "Shopping: For All and Safe",
   description: "We go shopping. Fun and Games",
 };
 
