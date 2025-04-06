@@ -18,7 +18,7 @@ function page() {
     }
     async function Biralo(value) {
         const a = await fetch(`/dbtest?value=${value}`, {
-            method: "POST",
+            method: "GET",
             headers: {
                 "Authorization": "1234",
                 "Content-Type": "application/json",
