@@ -17,7 +17,13 @@ function page() {
         setData(response);
     }
     async function Biralo(value) {
-        const a = await fetch(`/dbtest?value=${value}`);
+        const a = await fetch(`/dbtest?value=${value}`, {
+            method: "GET",
+            headers: {
+                "Authorization": "1234",
+                "Content-Type": "application/json",
+            }
+        });
         const vhi = await a.json();
         setData(vhi);
     }
