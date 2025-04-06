@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="container">
       <header className="hero">
-        <h1>Welcome to The Store</h1>
+        <h1>Saksham Dahal Shop</h1>
         <p>Your one-stop shop for everything you need.</p>
         <button className="shop-now" onClick={() => router.push('/reality')}>Shop Now</button>
       </header>
@@ -25,14 +25,14 @@ export default function Home() {
         </div>
       </section>
 
-      <p className="why-choose-us">
+      <div className="why-choose-us">
         <div>Why Choose Us?</div>
         <div className="why-list">
           <div className="why-item">See it</div>
           <div className="why-item">Click it</div>
           <div className="why-item">Shop it</div>
         </div>
-      </p>
+      </div>
 
       <section className="customer-reviews">
         <div>What Our Customers Say</div>
