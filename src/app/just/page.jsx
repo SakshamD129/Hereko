@@ -11,7 +11,6 @@ function page() {
                 throw new Error("Word not found");
             }
             const response = await a.json();
-            console.log(response);
             re.current.value = "";
             setData(response);
         }
