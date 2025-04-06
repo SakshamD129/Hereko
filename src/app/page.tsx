@@ -1,10 +1,13 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 export default function Home() {
   const router = useRouter();
   return (
     <div className="container">
+      <SpeedInsights />
       <header className="hero">
         <h1>Saksham Dahal Shop</h1>
         <p>Your one-stop shop for everything you need.</p>
