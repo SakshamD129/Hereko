@@ -5,14 +5,26 @@ function page() {
     const [data, setData] = useState([]);
     const re = useRef();
     async function Fetching(word) {
-        const a = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
-        const response = await a.json();
-        re.current.value = "";
-        setData(response);
+        try {
+            const a = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+            if (!a.ok) {
+                throw new Error("Word not found");
+            }
+            const response = await a.json();
+            console.log(response);
+            re.current.value = "";
+            setData(response);
+        }
+        catch (err) {
+            alert("Word Not found");
+            setData([]);
+        }
+
     }
     return (
         <div>
             Dictionary: Search and Get the Results
+            <br />
             <input type="text" ref={re} />
             <button onClick={() => Fetching(re.current.value)}>Search</button>
             <div>
