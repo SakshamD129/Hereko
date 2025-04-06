@@ -18,6 +18,7 @@ export async function GET(request) {
     return NextResponse.json(users);
 }
 export async function POST(request) {
+    const read = request.headers.get("Authorization");
     if (read != "1234") {
         return NextResponse.redirect(new URL("/", request.nextUrl));
     }
