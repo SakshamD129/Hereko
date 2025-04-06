@@ -1,70 +1,57 @@
-@keyframes fadeIn {
-    to {
-        scale: 0.9;
-        transform: translateX(20px);
-        /*opacity: 1;*/
-    }
-}
-
-.element {
-    animation: fadeIn linear forwards;
-    /* animation-timeline: scroll();*/
-    animation-timeline: view();
-    animation-range: cover contain 100px;
-    /* animation-range-start
-              cover means as soon as the element comes into the viewport, it starts
-    and animation-range-end 
-      contain means as soon as the entire element comes into the viewport, the thing happens
-      you can also do contain 100px in the animation range property that means that the animation will happen whent it is in the viewport 
-      entirely and 100px form the bottom.
-      entry in animation-range means that it will start as soom as in vp and ends when complete in vp
-    how much from the bottom
-    
-    */
-}
-
-.myname {
-    position: sticky;
-    height: 300px;
-    width: 500px;
-    border: 1px solid black;
-    display: grid;
-    place-items: center;
-    animation: upper linear forwards;
-    animation-timeline: view();
-    animation-range: entry 50% contain;
-
-}
-
-@keyframes upper {
-
-    to {
-        background-color: bisque;
-        scale: 1.01;
-        transform: translateX(50px);
-    }
-}
-
-.topma {
+.dictop {
     display: flex;
     justify-content: center;
-    height: 10px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    background-color: red;
-    scale: 0 1;
-    animation: move linear;
-    animation-timeline: scroll();
-    width: 100%;
-    /* transform-origin: left; this transform the origin to the left so it moves from left to right
-    scroll(x) mean it works when scrolling in the x-axis and vice versa
-    scroll(block) means y axis(default) and there is also inline
-    */
+    height: 2rem;
 }
 
-@keyframes move {
-    to {
-        scale: 1 1;
+.insidetop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    padding: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+    animation: alter linear 5s infinite;
+}
+
+@keyframes alter {
+    20% {
+        scale: 0.8;
+        background-color: antiquewhite;
     }
+
+    40% {
+        background-color: brown;
+    }
+
+    60% {
+        scale: 0.6;
+        background-color: burlywood;
+    }
+
+    80% {
+        background-color: chocolate;
+    }
+
+    100% {
+        scale: 1;
+        background-color: blanchedalmond;
+    }
+}
+
+.vitrako {
+    display: grid;
+    place-content: center;
+    margin-top: 20px;
+}
+
+input {
+    background-color: ivory;
+    color: black;
+}
+
+.dictmain {
+    display: grid;
+    place-content: flex-start;
 }

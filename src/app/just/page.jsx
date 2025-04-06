@@ -22,14 +22,18 @@ function page() {
     }
     return (
         <div>
-            Dictionary: Search and Get the Results
+            <div className='dictop'>
+                <div className='insidetop'>Dictionary: Search and Get the Results</div>
+            </div>
             <br />
-            <input type="text" ref={re} />
-            <button onClick={() => Fetching(re.current.value)}>Search</button>
+            <div className='vitrako'>
+                <input type="text" ref={re} />
+                <button onClick={() => Fetching(re.current.value)}>Search</button>
+            </div>
             <div>
                 {
                     data.map(item => (
-                        <div key={item.word}>
+                        <div key={item.word} className='dictmain'>
                             <div>Word:{item.word}</div>
                             {item.meanings.map((mean, meanIndex) => (
                                 <div key={meanIndex}>
