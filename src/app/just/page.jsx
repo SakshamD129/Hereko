@@ -27,7 +27,7 @@ function page() {
             </div>
             <br />
             <div className='vitrako'>
-                <input type="text" ref={re} />
+                <input type="text" ref={re} placeholder="Search" />
                 <button onClick={() => Fetching(re.current.value)}>Search</button>
             </div>
             <div>
